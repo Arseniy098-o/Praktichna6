@@ -1,0 +1,15 @@
+public class SineTable {
+    public static void main(String[] args) {
+        int count = 0;
+
+        for (int i = 0; i <= 90; i++) {
+            double radians = Math.toRadians(i);
+            System.out.printf("%6.3f ", Math.sin(radians));
+            count++;
+
+            if (count % 10 == 0) {
+                System.out.println();
+            }
+        }
+    }
+}
